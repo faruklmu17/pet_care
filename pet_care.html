@@ -27,6 +27,7 @@
             margin: 10px;
             font-size: 16px;
             cursor: pointer;
+            background-color: yellow;
         }
     </style>
 </head>
@@ -43,10 +44,10 @@
     </div>
 
     <div class="actions">
-        <button id="feed-btn">Feed</button>
+        <button id="reset-btn">Reset</button>
         <button id="play-btn">Play</button>
         <button id="sleep-btn">Sleep</button>
-        <button id="reset-btn">Reset</button>
+        <button id="feed-btn">Feed</button>
     </div>
 
     <script>
@@ -96,7 +97,7 @@
             energy = Math.max(energy - 1, 0); // Energy decreases over time
             happiness = Math.max(happiness - 1, 0); // Happiness decreases over time
             updateStats();
-        }, 5000); // Update every 5 seconds
+        }, 6000); // Update every 6 seconds
 
     </script>
 
